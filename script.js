@@ -80,7 +80,8 @@ const fav=JSON.parse(localStorage.getItem("favCities"))||[];
 const container=document.getElementById("favorites");
 
 container.innerHTML="";
-
+document.getElementById("weather").innerText="Loading...";
+document.getElementById("aqiValue").innerText="Loading...";
 fav.forEach(city=>{
 const btn=document.createElement("button");
 btn.innerText=city;
