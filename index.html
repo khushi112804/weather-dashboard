@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart City Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <aside class="sidebar">
+    <h2>CityDash</h2>
+    <input id="city" placeholder="Search city">
+    <button onclick="searchCity()">Search</button>
+  </aside>
+
+  <main class="main">
+
+    <div class="card">
+      <h3>Weather</h3>
+      <p id="weather">--</p>
+    </div>
+
+    <div class="card">
+      <h3>Air Quality</h3>
+      <p id="aqi">Coming soon</p>
+    </div>
+    <div class="header">
+<h2 id="cityTitle">Search a city</h2>
+<button onclick="toggleTheme()">🌙</button>
+</div>
+
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
